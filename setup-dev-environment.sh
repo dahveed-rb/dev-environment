@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This script installs Neovim and Node.js on a fresh Ubuntu 20.04 LTS machine.
+# chmod +x install_nvim_node.sh
+# ./install_nvim_node.sh
+
 # Exit on error
 set -e
 
