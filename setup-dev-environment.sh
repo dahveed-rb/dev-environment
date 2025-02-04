@@ -1,19 +1,17 @@
 #!/bin/bash
 
 # This script installs Neovim and Node.js on a fresh Ubuntu 20.04 LTS machine.
-# chmod +x install_nvim_node.sh
-# ./install_nvim_node.sh
-
-# Exit on error
-set -e
+# wget https://raw.githubusercontent.com/dahveed-rb/dev-environment/main/setup-dev-environment.sh
+# chmod +x setup-dev-environment.sh
+# ./setup-dev-environment.sh
 
 # Update package list
 echo "Updating package list..."
-sudo apt update -y
+sudo yum update -y
 
 # Install dependencies
 echo "Installing required dependencies..."
-sudo apt install -y curl git unzip build-essential
+sudo yum install -y curl git unzip tar gcc-c++ make shadow-utils
 
 # Install Neovim
 echo "Installing Neovim..."
